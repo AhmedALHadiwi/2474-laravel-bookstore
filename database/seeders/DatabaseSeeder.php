@@ -20,32 +20,32 @@ class DatabaseSeeder extends Seeder
     {
         // // // User::factory(10)->create();
 
-        // User::factory()->create([
-        //     'name' => 'Ahmed ALHadiwi',
-        //     'email' => 'ahmedalhadiwi04@gmail.com',
-        //     'mobile' => '01224863072',
-        //     'password' => Hash::make('password'),
-        //     'roles' => 'admin',
-        // ]);
+        User::factory()->create([
+            'name' => 'Ahmed ALHadiwi',
+            'email' => 'ahmedalhadiwi04@gmail.com',
+            'mobile' => '01224863072',
+            'password' => Hash::make('password'),
+            'roles' => 'admin',
+        ]);
 
-        // User::factory(300)->create();
+        User::factory(300)->create();
 
-        // // //Topic
-        // Topic::factory(100)->create();
+        // //Topic
+        Topic::factory(100)->create();
 
-        // // //Author
-        // Author::factory(50)->create();
+        // //Author
+        Author::factory(50)->create();
 
-        // // //Languages
-        // $languages =['Arabic','English','French','Italian','Polish','Turkish','Ukrain'];
-        // foreach ($languages as $language) {
-        //     Language::create([
-        //         'lang' => $language
-        //     ]);
-        // }
+        // //Languages
+        $languages =['Arabic','English','French','Italian','Polish','Turkish','Ukrain'];
+        foreach ($languages as $language) {
+            Language::create([
+                'lang' => $language
+            ]);
+        }
 
-        // // //Books
-        // Book::factory(100)->create();
+        // //Books
+        Book::factory(100)->create();
 
     }
 }
