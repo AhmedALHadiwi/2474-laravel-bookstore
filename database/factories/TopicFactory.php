@@ -17,7 +17,7 @@ class TopicFactory extends Factory
     public function definition(): array
     {
         return [
-            'topic'=>fake()->sentence()
+            //
         ];
     }
 }
