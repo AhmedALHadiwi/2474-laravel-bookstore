@@ -11,7 +11,7 @@ class StoreLanguageRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,7 @@ class StoreLanguageRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'lang' => 'required|in:Arabic,English,French,Italian,Polish,Turkish,Ukrain'
         ];
     }
 }

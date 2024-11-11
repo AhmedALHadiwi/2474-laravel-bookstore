@@ -22,7 +22,7 @@ Route::resource('topics', TopicController::class);
 Route::resource('authors', AuthorController::class);
 
 //Language
-Route::resource('language', LanguageController::class);
+Route::resource('languages', LanguageController::class);
 
 //Books
 Route::resource('books', BookController::class);

@@ -29,7 +29,7 @@ class TopicController extends Controller
      */
     public function store(StoreTopicRequest $request)
     {
-        //
+        return $request;
     }
 
     /**

@@ -29,7 +29,8 @@ class LanguageController extends Controller
      */
     public function store(StoreLanguageRequest $request)
     {
-        //
+        return $request;
+        
     }
 
     /**

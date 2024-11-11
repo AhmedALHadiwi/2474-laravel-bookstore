@@ -29,7 +29,7 @@ class AuthorController extends Controller
      */
     public function store(StoreAuthorRequest $request)
     {
-        //
+        return $request;
     }
 
     /**
